@@ -1,6 +1,7 @@
 const http=require("http");
 const fs=require("fs");
 var requests=require("requests")
+const port=process.env.PORT;
 
 const homefile=fs.readFileSync("home.html","utf-8");
 const replaceVal=(tempVal,orgVal)=>{
@@ -22,7 +23,6 @@ const server=http.createServer((req,res)=>{
                 const realtimedata=arrdata.map((val)=>
                     replaceVal(homefile,val)).join("");
                 res.write(realtimedata);
-                console.log(arrdata)
                 
             })
             .on('end',  (err) =>{
@@ -32,4 +32,4 @@ const server=http.createServer((req,res)=>{
             });
     }
 })
-server.listen(3000,"127.0.0.1");
+server.listen(port);
