@@ -2,7 +2,7 @@
   "name": "goweather",
   "version": "1.0.0",
   "description": "Creating weather app",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
