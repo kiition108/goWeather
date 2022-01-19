@@ -1,0 +1,15 @@
+{
+  "name": "goweather",
+  "version": "1.0.0",
+  "description": "Creating weather app",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Kishan Singh",
+  "license": "ISC",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
